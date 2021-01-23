@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // aplication/json
 app.use(bodyParser.json());
-console.log(process.env.NODE_ENV);
+
 const mongoose = require('mongoose');
 mongoose.connect(config.mongoURI, {
   useNewUrlParser: true,
